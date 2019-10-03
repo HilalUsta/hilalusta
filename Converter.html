@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://maeyler.github.io/Test/%C3%B6dev/Counting.html -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="https://maeyler.github.io/favicon.ico">
+    <title>C to F / F to C </title>
+
+  <style> /* CSS comment */
+    body { max-width: 440px; }
+    #inp { width: 50px }
+    #out {
+        font-size: 18px;
+        background: blue;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+  </style>
+</head>
+
+<body>   <!-- HTML comment: Modify all items marked xxx -->
+
+<h2 id="title">C to F / F to C</h2>
+C:	 
+<input type="number" id="c" value="0" onchange="cTof()">
+F:
+<input type="number" id="f" value="0" onclick="fToc()">
+
+<hr>
+
+<hr>
+
+
+<script>
+"use strict";
+// JavaScript comment
+function cTof() {
+	
+	document.getElementById('f').value = ((document.getElementById('c').value*1.8)+32).toPrecision(3);
+
+    
+}
+ function fToc() {
+	
+	document.getElementById('c').value =(((document.getElementById('f').value)-32)/1.8).toPrecision(3);
+
+    
+}  
+</script>
+
+
+
+</body></html>
